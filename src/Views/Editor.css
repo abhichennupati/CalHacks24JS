@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+
+@font-face {
+    font-family: "Linux Libertine";
+    src:
+        local("Linux Libertine"),
+        url("/public/fonts/LinuxLibertine.ttf") format("truetype");
+}
+
+.lora-light {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.full-editor {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-left: 40px;
+
+    --title-font-size: 28px;
+    --content-font-size: 20px;
+}
+
+.editor-container {
+    color: #000;
+    position: relative;
+    text-align: left;
+}
+
+.content-editor {
+    font-family: "Linux Libertine";
+    font-weight: 400;
+}
+
+.title-editor {
+    margin-top: 40px;
+    font-family: "Lora", serif;
+    font-weight: 400;
+}
+
+.editor-input {
+    resize: none;
+    caret-color: rgb(5, 5, 5);
+    position: relative;
+    tab-size: 1;
+    outline: 0;
+    padding: 15px 10px;
+    caret-color: #444;
+}
+
+.title-input {
+    font-size: var(--title-font-size);
+    min-height: 40px;
+}
+
+.content-input {
+    font-size: var(--content-font-size);
+    min-height: 300px;
+}
+
+.editor-placeholder {
+    color: #999;
+    overflow: hidden;
+    position: absolute;
+    text-overflow: ellipsis;
+    top: 15px;
+    left: 10px;
+    font-size: var(--content-font-size);
+    user-select: none;
+    display: inline-block;
+    pointer-events: none;
+}
+
+.title-editor .editor-placeholder {
+    font-size: var(--title-font-size);
+}
+
+.active-tab {
+    color: var(--framecolor3);
+    padding-top: 0px;
+}
+
+.inactive-tab {
+    color: gray;
+    padding-top: 0px;
+}
+
+.inactive-tab:hover {
+    color: var(--framecolor3);
+}
+
+.active-tab-underline {
+    background-color: var(--framecolor2);
+}
+
+.top-toggle-menu {
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+}

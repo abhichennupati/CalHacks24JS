@@ -1,0 +1,56 @@
+.top-toggle-menu {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+}
+
+.expanded-view {
+    padding-top: 60px;
+}
+
+.tab-button {
+    position: relative;
+    transition: color 0.3s;
+}
+
+.tab-button .underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #3b82f6;
+    transform-origin: left;
+    transition: transform 0.3s;
+}
+
+.tab-button:not(.active) .underline {
+    transform: scaleX(0);
+}
+
+.source-view {
+    font-family: "Linux Libertine";
+}
+
+.source-title {
+    font-family: "Linux Libertine";
+}
+
+.source-author {
+    font-family: "Roboto", sans-serif;
+}
+
+.source-date {
+    font-family: "Roboto", sans-serif;
+}
+
+.sources-back-button {
+    font-family: "Roboto", sans-serif;
+}
+
+.add-source-button {
+    background-color: var(--framecolor2);
+}
+
+.add-source-menu-popup {
+    font-family: "Roboto", sans-serif;
+}
